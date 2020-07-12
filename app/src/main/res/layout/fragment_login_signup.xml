@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_login_llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_2sdp">
+
+
+        <ImageView
+            android:id="@+id/fragment_signup_ivBack"
+            android:layout_width="@dimen/_37sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_arror" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/shivansh_splash" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:id="@+id/fragment_login_tab_tvLogin"
+            style="@style/ganaral_header_style"
+            android:text="@string/log_in"
+            app:font_name="NunitoExtraBold.ttf" />
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:id="@+id/fragment_login_tab_tvSignUp"
+            style="@style/ganaral_lightgrey_btn_save_style"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16sdp"
+            app:font_name="NunitoExtraBold.ttf" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fragment_signup_cvSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                                style="@style/ganaral_lable_style"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:text="@string/first_name"
+                                app:font_name="NunitoBold.ttf" />
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                                android:id="@+id/fragment_signup_etFirstName"
+                                style="@style/ganaral_edittext_style"
+                                android:hint="@string/enter_first_name"
+                                android:inputType="text"
+                                app:font_name="NunitoLight.ttf" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                                style="@style/ganaral_lable_style"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:text="@string/last_name"
+                                app:font_name="NunitoBold.ttf" />
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                                android:id="@+id/fragment_signup_etLastName"
+                                style="@style/ganaral_edittext_style"
+                                android:hint="@string/enter_last_name"
+                                android:inputType="textEmailAddress"
+                                app:font_name="NunitoLight.ttf" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            style="@style/ganaral_lable_style"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="@string/email"
+                            app:font_name="NunitoBold.ttf" />
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                            android:id="@+id/fragment_signup_etEmail"
+                            style="@style/ganaral_edittext_style"
+                            android:hint="@string/enter_your_email"
+                            android:inputType="textEmailAddress"
+                            app:font_name="NunitoLight.ttf" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            style="@style/ganaral_lable_style"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="@string/phone"
+                            app:font_name="NunitoBold.ttf" />
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                            android:id="@+id/fragment_signup_etPhone"
+                            style="@style/ganaral_edittext_style"
+                            android:hint="@string/you_phone_number"
+                            android:inputType="phone"
+                            app:font_name="NunitoLight.ttf" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            style="@style/ganaral_lable_style"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="@string/password"
+                            app:font_name="NunitoBold.ttf" />
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                            android:id="@+id/fragment_signup_etPassword"
+                            style="@style/ganaral_edittext_style"
+                            android:hint="@string/enter_your_secure_password"
+                            android:inputType="textPassword"
+                            app:font_name="NunitoLight.ttf" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                                style="@style/ganaral_lable_style"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:text="Flat Number"
+                                app:font_name="NunitoBold.ttf" />
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                                android:id="@+id/fragment_signup_etFlatNumber"
+                                style="@style/ganaral_edittext_style"
+                                android:hint="Enter Flat Number"
+                                android:inputType="text"
+                                app:font_name="NunitoLight.ttf" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                                style="@style/ganaral_lable_style"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:text="Wing Name"
+                                app:font_name="NunitoBold.ttf" />
+
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                                android:id="@+id/fragment_signup_etWingName"
+                                style="@style/ganaral_edittext_style"
+                                android:hint="Enter Wing Name"
+                                android:inputType="textEmailAddress"
+                                app:font_name="NunitoLight.ttf" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/dailog_add_societyname_etsocietyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            android:id="@+id/fragment_signup_tvSignup"
+                            style="@style/ganaral_logintext_btn_style"
+                            android:layout_alignParentEnd="true"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/sign_up"
+                            app:font_name="NunitoExtraBold.ttf" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fragment_login_signup_cvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            style="@style/ganaral_lable_style"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="@string/email"
+                            app:font_name="NunitoBold.ttf" />
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                            android:id="@+id/fragment_login_etEmail"
+                            style="@style/ganaral_edittext_style"
+                            android:hint="@string/enter_your_email"
+                            android:inputType="textEmailAddress"
+                            app:font_name="NunitoLight.ttf" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:orientation="vertical">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            style="@style/ganaral_lable_style"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="@string/password"
+                            app:font_name="NunitoBold.ttf" />
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                            android:id="@+id/fragment_login_etPassword"
+                            style="@style/ganaral_edittext_style"
+                            android:hint="@string/enter_your_secure_password"
+                            android:inputType="textPassword"
+                            app:font_name="NunitoLight.ttf" />
+
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            android:id="@+id/fragment_login_tvForgotPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/forgot_psw"
+                            android:textAllCaps="true"
+                            android:textColor="@color/forgot_lable_color"
+                            android:textSize="@dimen/_10sdp"
+                            app:font_name="NunitoSemiBold.ttf" />
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            android:id="@+id/fragment_login_tvLogin"
+                            style="@style/ganaral_logintext_btn_style"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_3sdp"
+                            android:text="@string/log_in"
+                            app:font_name="NunitoExtraBold.ttf" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>

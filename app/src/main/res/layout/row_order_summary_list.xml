@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_3sdp"
+        android:background="@color/row_product_cart_line_color"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+           style="@style/order_lable_style"
+            android:id="@+id/row_orderlist_new_tvOrederName"
+            android:layout_centerVertical="true"
+            app:font_name="NunitoSemiBold.ttf"/>
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            style="@style/order_lable_style"
+            android:id="@+id/row_orderlist_new_tvQuntity"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_toStartOf="@id/row_orderlist_new_tvPrice"
+            app:font_name="NunitoSemiBold.ttf"/>
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            style="@style/order_lable_style"
+            android:id="@+id/row_orderlist_new_tvPrice"
+            android:layout_alignParentEnd="true"
+            app:font_name="NunitoRegular.ttf"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

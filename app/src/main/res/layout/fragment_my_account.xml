@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/fragment_myaccount_ivProfile"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_65sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:src="@drawable/profileimg"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="1dp" />
+
+
+                    <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                        android:id="@+id/fragment_myaccount_tvChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@drawable/drawable_current_location"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="@string/change"
+                        android:textColor="@color/forgor_submit_color"
+                        android:textSize="@dimen/_13sdp"
+                        app:font_name="NunitoExtraBold.ttf" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/_5sdp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                                android:id="@+id/fragment_myaccount_tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textColor="@color/color_black"
+                                android:hint="Shailaja Hawaldar"
+                                android:textSize="@dimen/_15sdp"
+                                app:font_name="NunitoExtraBold.ttf" />
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                                android:id="@+id/fragment_myaccount_tvPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:singleLine="true"
+                                android:text="(624) 301 8944"
+                                android:textColor="@color/signup_tab_color"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="NunitoExtraBold.ttf" />
+
+                            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                                android:id="@+id/fragment_myaccount_tvEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/_2sdp"
+                                android:singleLine="true"
+                                android:text="sarahwade@gmail.com"
+                                android:textColor="@color/signup_tab_color"
+                                android:textSize="@dimen/_12sdp"
+                                app:font_name="NunitoExtraBold.ttf" />
+
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:layout_toStartOf="@+id/fragment_myaccount_tvEdit"
+                            android:background="@color/forgot_lable_color" />
+
+
+                        <ImageView
+                            android:id="@+id/fragment_myaccount_tvEdit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_edit_blue" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+               style="@style/ganaral_header_style"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/addresses"
+                app:font_name="NunitoBold.ttf" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_myaccount_rvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:visibility="visible">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="@dimen/_5sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_myaccount_rlChangePsw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+
+                        <ImageView
+                            android:id="@+id/fragment_myaccount_ivChangePsw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_change_psw" />
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                          style="@style/ganaral_greystyle"
+                            android:layout_toEndOf="@+id/fragment_myaccount_ivChangePsw"
+                            android:padding="@dimen/_5sdp"
+                            android:text="@string/change_password"
+                            app:font_name="NunitoSemiBold.ttf" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>

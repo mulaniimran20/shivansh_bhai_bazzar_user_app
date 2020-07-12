@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="lang_al" translatable="false">ar</string>
+    <string name="lang_en" translatable="false">en</string>
+
+    <string name="prefrence_selected_lang">selected_lang</string>
+    <string name="preferances_islogin">isLogin</string>
+    <string name="preferances_userIdFromDB">loginUserIdFromDB</string>
+    <string name="preferances_isWelcom">isWelcome</string>
+    <string name="preferances_userName">user_name</string>
+
+    <string name="bdl_model">modeldata</string>
+    <string name="choospincode">choos pincode</string>
+    <string name="forgot_psw_lable">forgot password</string>
+    <string name="lbl_aboutus">AboutUs</string>
+    <string name="lbl_feedback">Feedback</string>
+    <string name="lbl_changepassword">change password</string>
+    <string name="lbl_deactiveaccount">De-Active Account</string>
+    <string name="lbl_clearhistory">clear history</string>
+    <string name="lbl_filter">filter</string>
+    <string name="lbl_TermsOfUse">TermsOfUse</string>
+    <string name="lbl_PrivacyPolicy">PrivacyPolicy</string>
+    <string name="lbl_pending">pending</string>
+    <string name="lbl_delivery">delivery</string>
+    <string name="lbl_cancel">cancel</string>
+
+</resources>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_195sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/fragment_product_details_vpSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+
+                    </android.support.v4.view.ViewPager>
+
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/fragment_product_details_ivLikeUnLike"-->
+                        <!--android:layout_width="@dimen/_35sdp"-->
+                        <!--android:layout_height="@dimen/_35sdp"-->
+                        <!--android:padding="@dimen/_5sdp" />-->
+
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp">
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    android:id="@+id/fragment_product_details_tvTitle"
+                    style="@style/ganaral_greystyle"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_16sdp"
+                    android:gravity="center"
+                    app:font_name="NunitoBold.ttf" />
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    android:id="@+id/fragment_product_details_tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/login_signup_edithint_color"
+                    android:textSize="@dimen/_15sdp"
+                    app:font_name="NunitoLight.ttf" />
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_2sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/row_produclist_rlTotalCart"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_27sdp"
+                        android:layout_gravity="center"
+
+                        android:gravity="center"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/fragment_product_details_ivMins"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_mins_y" />
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            android:id="@+id/fragment_product_details_tvTotalKg"
+                            style="@style/order_lable_style"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_12sdp"
+                            app:font_name="NunitoBold.ttf" />
+
+
+                        <ImageView
+                            android:id="@+id/fragment_product_details_ivPlus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/ic_plus_y" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_product_details_rlAddToCart"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_33sdp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:background="@drawable/addcart_drawable"
+                        android:gravity="end"
+                        android:padding="@dimen/_5sdp">
+
+
+                        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:text="@string/add_to_cart"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13sdp"
+                            android:textStyle="bold"
+                            app:font_name="NunitoExtraBold.ttf" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/details"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_16sdp"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+            <!--<com.borjabravo.readmoretextview.ReadMoreTextView-->
+                <!--android:id="@+id/fragment_product_details_tvDescription"-->
+                <!--style="@style/ganaral_details_style"-->
+                <!--android:layout_marginEnd="@dimen/_20sdp"-->
+                <!--android:layout_marginStart="@dimen/_20sdp"-->
+                <!--android:scrollbars="vertical"-->
+                <!--app:trimLines="3"-->
+                <!--android:paddingTop="@dimen/_5sdp"-->
+                <!--android:paddingBottom="@dimen/_5sdp"-->
+                <!--android:text="@string/description_data" />-->
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/fragment_product_details_tvDescription"
+                style="@style/ganaral_details_style"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:scrollbars="vertical"
+                app:trimLines="3"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>
+

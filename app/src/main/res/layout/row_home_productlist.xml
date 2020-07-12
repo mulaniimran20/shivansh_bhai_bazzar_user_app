@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_productlist_cvContainer"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_margin="@dimen/_3sdp"
+android:clickable="true"
+android:focusable="true"
+app:cardCornerRadius="@dimen/_12sdp"
+app:cardElevation="0dp">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="100dp"
+    android:background="#C5E1A5"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/row_home_productlist_ivProImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:maxHeight="90dp"
+        android:layout_below="@id/textviewName"
+        android:src="@drawable/category_fruits_vegetables"
+        style="@style/homeCardImage"
+        />
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:textColor="@color/color_black"
+        android:id="@+id/textviewName"
+        style="@style/viewParent.headerText.HomeCardTitle" />
+
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
+

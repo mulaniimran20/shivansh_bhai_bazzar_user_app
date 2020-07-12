@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_15sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="0dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_15sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_2sdp">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                        style="@style/ganaral_header_style"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/send_feedback"
+                        app:font_name="NunitoBold.ttf" />
+
+
+                    <ImageView
+                        android:id="@+id/dailog_send_feedback_ivClose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_close" />
+
+                </RelativeLayout>
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:text="@string/type_of_feedback"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="@color/login_signup_edithint_color"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="NunitoBold.ttf" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/_5sdp">
+
+
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/menu_text_color"
+                        android:layout_weight="1"
+                        android:text="@string/feedback"/>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/menu_text_color"
+                        android:layout_weight="1"
+                        android:text="@string/complaint"/>
+
+
+                </RadioGroup>
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:text="@string/description"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textColor="@color/login_signup_edithint_color"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="NunitoBold.ttf" />
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                    android:id="@+id/dailog_send_feedback_etDes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_current_password"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/menu_text_color"
+                    android:text="@string/description_data"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="NunitoLight.ttf" />
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp">
+
+                    <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                        android:id="@+id/dailog_send_feedback_tvCancel"
+                        style="@style/ganaral_btn_save_style"
+                        android:layout_toStartOf="@+id/dailog_send_feedback_tvSubmit"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/cancel"
+                        app:font_name="NunitoSemiBold.ttf" />
+
+
+                    <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                        android:id="@+id/dailog_send_feedback_tvSubmit"
+                        style="@style/ganaral_btn_save_style"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/send"
+                        app:font_name="NunitoExtraBold.ttf" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v7.widget.CardView>
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>

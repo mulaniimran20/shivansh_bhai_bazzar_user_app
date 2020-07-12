@@ -1,0 +1,289 @@
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/row_checkout_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentEnd="true">
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    android:id="@+id/tvDelicvery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/delivery"
+                    android:textColor="@color/payment_lbl"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_16sdp"
+                    app:font_name="NunitoBold.ttf" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvDelicvery"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_checkount_done"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="@dimen/_15sdp">
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    android:id="@+id/tvPayment"
+                    style="@style/ganaral_header_style"
+                    android:text="@string/payment"
+                    app:font_name="NunitoBold.ttf" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvPayment"
+                    android:src="@drawable/ic_checkount_next"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@drawable/drawable_payment_offer">
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/payment_offer"
+                android:textColor="@color/row_addresslistnew_tvColor"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="NunitoSemiBold.ttf" />
+
+
+        </LinearLayout>
+
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:text="@string/payment_method"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="NunitoBold.ttf"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/drawable_payment_method"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/paymentidd"
+                >
+
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wallet_upi"
+                    android:id="@+id/wallet_upi"
+                    android:textAlignment="textStart"
+                    android:layoutDirection="rtl"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="NunitoRegular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:padding="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/row_product_cart_line_color">
+                </View>
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/net_banking"
+                    android:id="@+id/online"
+                    android:textAlignment="textStart"
+                    android:layoutDirection="rtl"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="NunitoRegular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_15sdp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/row_product_cart_line_color">
+                </View>
+
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Cash Receipt"
+                    android:id="@+id/galary"
+                    android:textAlignment="textStart"
+                    android:layoutDirection="rtl"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="NunitoRegular.ttf"
+                    tools:ignore="MissingPrefix"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:padding="@dimen/_15sdp"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="@color/row_product_cart_line_color">
+                </View>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/ic_aboutus" />
+
+        <LinearLayout
+            android:id="@+id/fragment_order_list_rlTotalCart"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                style="@style/ganaral_primarystyle"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/sub_total"
+                android:textColor="@color/menu_text_color"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:id="@+id/fragment_order_list_tvTotalKg"
+                style="@style/ganaral_greystyle"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/temp_total_val"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="NunitoRegular.ttf" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_paymentNew_rlProceestoPay"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/drawable_paymetn_btn"
+            android:padding="@dimen/_2sdp">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:text="@string/prcees_to_pay"
+                android:textColor="@color/row_product_add_color"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>

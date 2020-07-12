@@ -1,0 +1,174 @@
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/row_checkout_bg_color"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_13sdp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="@string/delivery_address"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="NunitoBold.ttf" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_checkout_rvAddressList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp">
+
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/order_summerry"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_14sdp"
+            app:font_name="NunitoBold.ttf" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_checkout_rvOrderList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_5sdp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/edtCoupenCode"
+            android:hint="Enter Coupen Code"
+            android:textSize="@dimen/_16sdp"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:id="@+id/applyCoupenCode"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/ic_order_delivred"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_13sdp"
+            android:src="@drawable/ic_aboutus" />
+
+        <LinearLayout
+            android:id="@+id/fragment_order_list_rlTotalCart"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                style="@style/ganaral_primarystyle"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/sub_total"
+                android:textColor="@color/menu_text_color"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:id="@+id/fragment_order_list_tvTotalKg"
+                style="@style/ganaral_greystyle"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/temp_total_val"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="NunitoRegular.ttf" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_checkout_btnConfirmOrder"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_3sdp"
+            android:background="@drawable/drawable_checkout_order_btn"
+            android:padding="@dimen/_5sdp">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/confirmorder"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>

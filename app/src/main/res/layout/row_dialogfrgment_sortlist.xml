@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_80sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:clickable="true"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lowest"
+            android:id="@+id/row_dialogfrgmnet_sortList_tvsortItem"
+            android:textColor="@color/product_details_color"
+            app:font_name="NunitoSemiBold.ttf"
+            android:textSize="@dimen/_12sdp"/>
+
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_dialogfrgmnet_sortList_tvPrice"
+            android:text="@string/price"
+            android:textColor="@color/product_details_color"
+            app:font_name="NunitoSemiBold.ttf"
+            android:textSize="@dimen/_12sdp"/>
+
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_dialogfrgmnet_sortList_tvFirst"
+            android:text="@string/lowest"
+            android:textColor="@color/login_btnt_bg_color"
+            app:font_name="NunitoSemiBold.ttf"
+            android:textSize="@dimen/_12sdp"/>
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

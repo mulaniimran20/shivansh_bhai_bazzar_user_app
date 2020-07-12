@@ -1,0 +1,186 @@
+<resources>
+
+    <!-- Project name -->
+    <string name="app_name_new">SHIVANSH BHAJI BAZZAR</string>
+    <string name="settings">Settings</string>
+    <string name="check_connection">Check your network connection</string>
+
+    <!-- Sign up /Register  -->
+    <string name="log_in">Login</string>
+    <string name="sign_up">Signup</string>
+    <string name="forgot_psw">Forgot Password?</string>
+    <string name="email">Email</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="phone">Phone</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="submit">Submit</string>
+
+    <!-- Drawer strings -->
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="closeDrawer">Navigation View</string>
+
+
+    <!-- Validation Strings  -->
+    <string name="val_enter_password">Please enter password.</string>
+    <string name="val_password_greter_six">Password must have 6 or more characters</string>
+    <string name="val_enter_email">Please enter email address.</string>
+    <string name="val_enter_fname">Please enter firstname.</string>
+    <string name="val_enter_lname">Please enter lastname.</string>
+    <string name="val_enter_valid_email">Please enter valid email address.</string>
+    <string name="val_enter_phone">Please enter phone number.</string>
+
+    <!--Order and payment scree string-->
+    <string name="add_to_cart">Add</string>
+
+    <!-- product detail & Add address string-->
+    <string name="address_line_1">line 1</string>
+    <string name="address_line_2">line 2</string>
+
+
+    <!--Navigation slidemenu string-->
+    <string name="nav_menu_home">Home</string>
+
+    <string name="nav_menu_my_address">My Address</string>
+    <string name="nav_menu_notification">Notification</string>
+    <string name="nav_my_account">My Account</string>
+
+    <!--All lable-->
+    <string name="check_out_now">CheckOut</string>
+    <string name="your_cart_is_empty">Your cart is empty!</string>
+    <string name="pincode">Pincode*</string>
+    <string name="delivery">Delivery</string>
+    <string name="sub_total">Total : </string>
+    <string name="dolar">$</string>
+    <string name="kg">Kg</string>
+    <string name="enter_your_email">enter your email</string>
+    <string name="enter_your_phone">enter your phone</string>
+    <string name="enter_your_secure_password">enter your secure password</string>
+    <string name="or">Or</string>
+    <string name="join_with">Join with</string>
+    <string name="facebook">facebook</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="enter_last_name">enter last name</string>
+    <string name="enter_first_name">enter first name</string>
+    <string name="you_phone_number">you phone number</string>
+    <string name="google">google</string>
+    <string name="categories">Categories</string>
+    <string name="popular">Popular</string>
+    <string name="whats_new">Whats\'New</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+
+    <string name="enter_your_registered_email_below_we_ll_send_you_reset_link_via_email">Enter your registered email below, \nwe\'ll send you RESET link via Email.</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_password">Change Password</string>
+    <string name="current_password">current password</string>
+    <string name="enter_current_password">enter current password</string>
+    <string name="enter_city_name">enter city name</string>
+    <string name="enter_new_password">enter new password</string>
+    <string name="enter_confirm_password">re-enter new password</string>
+    <string name="enter_gender">enter gender</string>
+    <string name="new_password">New Password</string>
+    <string name="add_new_address">Add New Address</string>
+    <string name="use_my_current_location">Use My Current Location</string>
+    <string name="flat_no_building_name">flat no, Building name *</string>
+    <string name="locality_area_or_street">Locality, area or street *</string>
+    <string name="city">City *</string>
+    <string name="area_code">Area code *</string>
+    <string name="state">State *</string>
+    <string name="enter_state_name">Enter state name</string>
+    <string name="save">Save</string>
+    <string name="change">Change</string>
+    <string name="addresses">Addresses</string>
+    <string name="clear_history">Clear History</string>
+    <string name="deactivate_account">Deactivate Account</string>
+    <string name="gender">Gender</string>
+    <string name="details">Details</string>
+    <string name="search_groceries_or_product">Search Groceries or Product</string>
+    <string name="location_area">Location/Area Pincode</string>
+    <string name="enter_address">Please enter Address.</string>
+    <string name="this_includes">This includes:</string>
+    <string name="search_history">Search history</string>
+    <string name="order_history">Order History</string>
+    <string name="clear_all">Clear all</string>
+    <string name="confirm">Confirm</string>
+
+    <!--Temp user data-->
+    <string name="leo_jorge">Leo Jorge</string>
+    <string name="lio_jorge_gmail">lio.jorge@gmail.com</string>
+    <string name="temp_number">+1 8005892365</string>
+    <string name="temp_date">10/10/2018 10:10 PM</string>
+    <string name="jems_le">Jems Le</string>
+    <string name="_1_5874126589">+1 5874126589</string>
+    <string name="temp_pin">556677</string>
+    <string name="califonia_usa">Califonia,USA</string>
+    <string name="temp_items">10</string>
+    <string name="temp_amount">$112</string>
+    <string name="_12">$12</string>
+    <string name="temp_total_amt">$100</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="description_data">Lorem Ipsum is simply dummy text of the printing and typesetting industry.dummy text of the printing and typesetting industry electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software Why do we use it?It is a long established fact that a reader will be distracted.</string>
+    <string name="temp_total_val">  ₹ 308</string>
+
+    <!--Cartlist & Payment & Filter & Order history setting & help & privacy policy lables-->
+    <string name="delivery_address">Delivery Address</string>
+    <string name="confirmorder">Confirm</string>
+    <string name="order_summerry">Order Summary</string>
+    <string name="payment_offer"><![CDATA[GET EXTRA 5% OFF* with MONEY bank Simply Save Credit card. T&C.]]></string>
+    <string name="payment_method">Payment Method</string>
+    <string name="wallet_upi">Wallet / UPI</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="credit_debit_atm_card">Credit / Debit / ATM Card</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="prcees_to_pay">PROCEED TO PAY</string>
+    <string name="filter_sorting">Filter / Sorting</string>
+    <string name="clear">CLEAR</string>
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="Price">PRICE</string>
+    <string name="select_offer">SELECT OFFER</string>
+    <string name="deactive_account">Deactivate Account</string>
+    <string name="my_cart_4">My Cart (4)</string>
+    <string name="pincode_cart">Pincode</string>
+    <string name="temp_380005">380015</string>
+    <string name="payment">Payment</string>
+    <string name="best_value">Best value</string>
+    <string name="top_sallers">Top sellers</string>
+    <string name="all">ALL</string>
+    <string name="fruits_vegetables"><![CDATA[Fruits & Vegetables]]></string>
+    <string name="apply">Apply</string>
+    <string name="discount">Discount</string>
+    <string name="or_less">Or less</string>
+    <string name="_10">10%</string>
+    <string name="per">%</string>
+    <string name="available_for_this_location">Available for this location</string>
+    <string name="email_us">Email US</string>
+    <string name="about_us">About Us</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="terms_use">Terms Use</string>
+    <string name="terms_off_use">Terms Off Use</string>
+    <string name="type_of_feedback">Type of feedback</string>
+    <string name="feedback">Feedback</string>
+    <string name="complaint">Complaint</string>
+    <string name="description">Description</string>
+    <string name="send">send</string>
+    <string name="enter_description">Enter description</string>
+    <string name="legal">Legal</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="lbl_choosprofile">choos profile</string>
+    <string name="order_date">Order Date:</string>
+    <string name="order_id">Order Id</string>
+    <string name="to_deliver_on">To Deliver On</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="view_receipt">View Receipt</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="delivery_date">Delivery Date</string>
+    <string name="buy_more_save_more">Buy More, Save More</string>
+    <string name="lowest">Lowest</string>
+    <string name="price">Price</string>
+
+
+</resources>

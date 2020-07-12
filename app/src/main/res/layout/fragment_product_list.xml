@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_productlist_llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_productlist_rlFilter"
+        android:layout_margin="@dimen/_1sdp">
+
+
+        <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+            android:id="@+id/fragment_productlist_tvBest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="@string/fruits_vegetables"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/_15sdp"
+            app:font_name="NunitoExtraBold.ttf" />
+
+
+        <ImageView
+            android:id="@+id/fragment_productlist_ivFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:layout_toStartOf="@+id/fragment_productlistivMultipleItem"
+            android:src="@drawable/ic_filter" />
+
+
+
+        <ImageView
+            android:id="@+id/fragment_productlistivMultipleItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_multiple_item" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_productlist_rvProductList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>

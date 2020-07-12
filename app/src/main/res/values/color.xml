@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryTransparent">#5FB04F</color>
+    <color name="colorPrimaryDark">#5FB04F</color>
+    <color name="cardColorRed">#F94172</color>
+    <color name="card_bg_white_transparant">#80FFFFFF</color>
+    <color name="edittext_bg">#B3D8AC</color>
+    <color name="signup_lable_color">#848484</color>
+    <color name="signup_tab_color">#40000000</color>
+    <color name="login_signup_edithint_color">#802c2c4c</color>
+    <color name="forgot_lable_color">#3362dc</color>
+    <color name="login_signup_btn_login_color">#fc8f00</color>
+    <color name="facebook_lable_color">#3577d2</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="gmail_lable_color">#ea4234</color>
+    <color name="menu_text_color">#2c2c4c</color>
+    <color name="logout_text_color">#ff2b4d</color>
+    <color name="login_btnt_bg_color">#fc8f00</color>
+    <color name="signup_btnt_bg_color">#34c75b</color>
+    <color name="signup_btnt_txt_color">#1dab43</color>
+    <color name="forgor_submit_color">#5239da</color>
+    <color name="checkout_order_btn">#3362dc</color>
+    <color name="addaddress_rounded_border">#335239da</color>
+    <color name="drwable_paymetn_offer">#d9efee</color>
+    <color name="drwable_paymetn_btn">#16c46c</color>
+    <color name="row_product_card_bg">#f6f6f6</color>
+    <color name="row_product_add_color">#fefefe</color>
+    <color name="row_product_cart_color">#fafafc</color>
+    <color name="row_checkout_bg_color">#f4f7fa</color>
+    <color name="row_addresslistnew_tvColor">#2c2c4c</color>
+    <color name="row_product_cart_line_color">#dfe3ee</color>
+
+
+    <color name="row_dialog_offerList_item4">#f4eeb7</color>
+    <color name="product_details_color">#5b5b7e</color>
+    <color name="search_bg">#f1f2f5</color>
+    <color name="search_bg_hint_clor">#61000000</color>
+    <color name="payment_lbl">#402c2c4c</color>
+    <color name="filter_discount_color">#e6000000</color>
+
+
+    <color name="bg_color">#f3f3f3</color>
+    <color name="ripal_color">#64b5f6</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_tranceparent">#80FFFFFF</color>
+    <color name="row_view">#D7D7D7</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_gray_light">#99C9C9C9</color>
+    <item name="green" type="color">#FF99CC00</item>
+
+    <!-- login / sign in font color -->
+    <color name="rippelColor">#0099CC</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#BDBDBD</color>
+
+
+    <color name="order_pendig_bgcolro">#f6f2dc</color>
+    <color name="order_cancel_bgcolro">#f6eaec</color>
+    <color name="order_delivery_bgcolro">#dbf0e6</color>
+
+
+
+</resources>

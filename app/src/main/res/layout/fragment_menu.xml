@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_menu"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp">
+
+
+        <ImageView
+            android:id="@+id/fragment_menu_ivClose"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_close" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_shivansh" />
+
+       <!-- <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:cardElevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_centerVertical="true">
+
+
+            <ImageView
+                android:id="@+id/fragment_menu_ivLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_location" />
+
+
+        </android.support.v7.widget.CardView>
+-->
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fragment_menu_cvLoginRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:id="@+id/fragment_menu_tvLogin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@drawable/logindrawable"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/log_in"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/or"
+                android:textColor="@color/login_signup_edithint_color"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="NunitoLight.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:id="@+id/fragment_menu_tvSignup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:background="@drawable/signupdrawable"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/sign_up"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/fragment_menu_cvProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_1sdp">
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_menu_rlProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fragment_menu_ivProfile"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/profileimg"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="1dp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/fragment_menu_ivProfile"
+                android:orientation="vertical">
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    android:id="@+id/fragment_menu_tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kailash patel"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/_17sdp"
+                    app:font_name="NunitoExtraBold.ttf" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_next" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card_bg_white_transparant"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/fragment_menu_rlWishlist"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/_5sdp">-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/fragment_menu_ivWishlist"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:src="@drawable/ic_mywhitelist" />-->
+
+                <!--<com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView-->
+                    <!--style="@style/ganaral_greystyle"-->
+                    <!--android:layout_toEndOf="@+id/fragment_menu_ivWishlist"-->
+                    <!--android:padding="@dimen/_5sdp"-->
+                    <!--android:text="@string/my_wishlist"-->
+                    <!--android:textSize="@dimen/_14sdp"-->
+                    <!--app:font_name="NunitoSemiBold.ttf" />-->
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:src="@drawable/ic_next" />-->
+
+
+            <!--</RelativeLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/fragment_menu_rlOrderHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/fragment_menu_ivOrderHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_order_history" />
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    style="@style/ganaral_greystyle"
+                    android:layout_toEndOf="@+id/fragment_menu_ivOrderHistory"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/order_history"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="NunitoSemiBold.ttf" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_next" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card_bg_white_transparant"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/fragment_menu_rlSetting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/fragment_menu_ivSetting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_seting" />
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    style="@style/ganaral_greystyle"
+                    android:layout_toEndOf="@+id/fragment_menu_ivSetting"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/settings"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="NunitoSemiBold.ttf" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_next" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <RelativeLayout
+                android:id="@+id/fragment_menu_rlHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/fragment_menu_ivHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/ic_help" />
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    style="@style/ganaral_greystyle"
+                    android:layout_toEndOf="@+id/fragment_menu_ivHelp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/help"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="NunitoSemiBold.ttf" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_next" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardBackgroundColor="@color/card_bg_white_transparant"
+        app:cardElevation="0dp">
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_menu_rlLogout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp">
+
+
+            <ImageView
+                android:id="@+id/ivLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_logout_new" />
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivLogout"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/logout"
+                android:textColor="@color/logout_text_color"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="NunitoSemiBold.ttf" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_next" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</com.aarfaatechnovision.kjl.shivanshbhajibazar.comman.SlidingLinearLayout>

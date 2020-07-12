@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_15sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                style="@style/ganaral_header_style"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/add_new_address"
+                app:font_name="NunitoBold.ttf" />
+
+
+            <ImageView
+                android:id="@+id/dailog_addnew_address_ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/dailog_addnew_address_rlCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_42sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/drawable_current_location"
+            android:orientation="horizontal">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableStart="@drawable/ic_current_location"
+                android:gravity="center"
+                android:text="@string/use_my_current_location"
+                android:textColor="@color/forgor_submit_color"
+                android:textSize="@dimen/_13sdp"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                style="@style/ganaral_lable_style"
+                android:paddingStart="@dimen/_3sdp"
+                android:text="@string/flat_no_building_name"
+                app:font_name="NunitoBold.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                android:id="@+id/dailog_addnew_address_etFlatNo"
+                style="@style/ganaral_edittext_style"
+                android:hint="@string/address_line_1"
+                android:inputType="text"
+                app:font_name="NunitoLight.ttf" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                style="@style/ganaral_lable_style"
+                android:paddingStart="@dimen/_3sdp"
+                android:text="@string/locality_area_or_street"
+                app:font_name="NunitoBold.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                android:id="@+id/dailog_addnew_address_etArea"
+                style="@style/ganaral_edittext_style"
+                android:hint="@string/address_line_1"
+                android:inputType="text"
+                app:font_name="NunitoLight.ttf" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                style="@style/ganaral_lable_style"
+                android:paddingStart="@dimen/_3sdp"
+                android:text="@string/city"
+                app:font_name="NunitoBold.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                android:id="@+id/dailog_addnew_address_etCity"
+                style="@style/ganaral_edittext_style"
+                android:hint="@string/enter_city_name"
+                android:inputType="text"
+                app:font_name="NunitoLight.ttf" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    style="@style/ganaral_lable_style"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:text="@string/pincode"
+                    app:font_name="NunitoBold.ttf" />
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                    android:id="@+id/dailog_addnew_address_etPincode"
+                    style="@style/ganaral_edittext_style"
+                    android:hint="@string/area_code"
+                    android:inputType="number"
+                    app:font_name="NunitoLight.ttf" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                    style="@style/ganaral_lable_style"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:text="@string/state"
+                    app:font_name="NunitoBold.ttf" />
+
+
+                <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomEdittext
+                    android:id="@+id/dailog_addnew_address_etState"
+                    style="@style/ganaral_edittext_style"
+                    android:hint="@string/enter_state_name"
+                    android:inputType="text"
+                    app:font_name="NunitoLight.ttf" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:id="@+id/dailog_addnew_address_tvCancel"
+                style="@style/ganaral_btn_save_style"
+                android:layout_toStartOf="@+id/dailog_addnew_address_tvSave"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/cancel"
+                app:font_name="NunitoSemiBold.ttf" />
+
+
+            <com.aarfaatechnovision.kjl.shivanshbhajibazar.customecomponent.CustomTextView
+                android:id="@+id/dailog_addnew_address_tvSave"
+                style="@style/ganaral_lightgrey_btn_save_style"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/save"
+                app:font_name="NunitoExtraBold.ttf" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
